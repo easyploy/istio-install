@@ -24,7 +24,7 @@ curl -Lk https://istio.io/downloadIstio | ISTIO_VERSION=1.15.0 sh -
 
 4- install operator using this command 
 ```
-helm install istio-operator istio-1.15.0/manifests/charts/istio-operator \
+helm upgrade --install istio-operator istio-1.15.0/manifests/charts/istio-operator \
  --set watchedNamespaces="istio-system" \
  -n istio-operator
 ```
